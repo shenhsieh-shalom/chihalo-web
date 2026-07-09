@@ -16,13 +16,10 @@
         }
     </style>
 </head>
-<!-- SOLUCIÓN DEFINITIVA: Ahora llama directamente a tu archivo local 'fondo.jpg'. 
-     Se redujo el filtro oscuro al 60% (rgba 0.60) para que tu imagen resalte con total nitidez en el celular. -->
-<body class="text-slate-100 antialiased overflow-x-hidden relative" 
-      style="background-image: linear-gradient(rgba(15, 23, 42, 0.60), rgba(15, 23, 42, 0.60)), url('fondo.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+<body class="bg-slate-950 text-slate-100 antialiased overflow-x-hidden">
 
     <!-- Header Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/85 backdrop-blur-md border-b border-slate-800">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="text-white font-bold text-xl tracking-wider">
                 CHIHALO<span class="text-blue-500">.cn</span>
@@ -33,14 +30,13 @@
         </div>
     </header>
 
-    <!-- 1. Hero Section (首屏) -->
-    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden bg-transparent">
+    <!-- 【BLOQUE 1: OSCURO】 Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden bg-slate-955">
         <div class="absolute inset-0 z-0">
-            <!-- Background Video Loop Placeholder -->
             <video class="w-full h-full object-cover opacity-20" autoplay loop muted playsinline>
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-41763-large.mp4" type="video/mp4">
             </video>
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
         </div>
 
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center mt-16">
@@ -72,51 +68,50 @@
         </div>
     </section>
 
-    <!-- 2. Business Models (合作模式) -->
-    <section id="business-models" class="py-24 px-4 bg-transparent scroll-mt-16">
+    <!-- 【BLOQUE 2: CLARO】 Business Models -->
+    <section id="business-models" class="py-24 px-4 bg-white text-slate-900 scroll-mt-16 relative z-10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase mb-2 block">COOPERATION MODELS</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">三大灵活合作模式，满足您的不同需求</h2>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2 block">COOPERATION MODELS</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">三大灵活合作模式，满足您的不同需求</h2>
                 <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-                <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
+                <p class="text-slate-500 max-w-2xl mx-auto text-sm md:text-base">
                     不仅提供顶尖设备，更提供全方位的工业清洗解决方案。选择最适合您企业现状的合作方式。
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Model 1 -->
-                <div class="bg-slate-900/65 backdrop-blur-md rounded-3xl p-8 border border-slate-800/60 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-900/20 rounded-bl-full -mr-12 -mt-12"></div>
-                    <div class="w-12 h-12 bg-slate-800 rounded-xl shadow-sm flex items-center justify-center text-blue-400 mb-6 border border-slate-700">
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 hover:border-blue-500/40 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6 border border-slate-100">
                         <span class="text-xl font-black">01</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">工业激光清洗机<span class="text-blue-400">租赁服务</span></h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        为您提供高性能、维护良好的专业级激光清洗设备。适合已有熟练操作人员，且仅需短期或阶段性使用设备的企业。
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">工业激光清洗机<span class="text-blue-600">租赁服务</span></h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        为您提供高性能、维护良好的专业级激光清洗设备。适合已有熟练操作人员，且仅需短期 or 阶段性使用设备的企业。
                     </p>
                 </div>
 
                 <!-- Model 2 -->
-                <div class="bg-blue-600/65 backdrop-blur-md rounded-3xl p-8 shadow-xl text-white transform md:-translate-y-4 border border-blue-500/40 relative group overflow-hidden">
+                <div class="bg-blue-600 rounded-3xl p-8 shadow-xl text-white transform md:-translate-y-4 border border-blue-500/30 relative group overflow-hidden">
                     <div class="absolute -top-4 -right-4 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg transform rotate-12">最受欢迎</div>
                     <div class="w-12 h-12 bg-white/20 rounded-xl backdrop-blur-sm flex items-center justify-center text-white mb-6 border border-white/20">
                         <span class="text-xl font-black">02</span>
                     </div>
                     <h3 class="text-xl font-bold mb-4">机器 + 专业操作员<span class="text-blue-200">代工租赁</span></h3>
-                    <p class="text-blue-100 text-sm leading-relaxed mb-6">
+                    <p class="text-blue-50 text-sm leading-relaxed">
                         一站式省心服务。我们不仅提供顶级激光设备，更派遣经验丰富的资深操作工程师上门为您施工，确保清洗质量。
                     </p>
                 </div>
 
                 <!-- Model 3 -->
-                <div class="bg-slate-900/65 backdrop-blur-md rounded-3xl p-8 border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 hover:border-blue-500/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-slate-800 rounded-xl shadow-sm flex items-center justify-center text-blue-400 mb-6 border border-slate-700">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6 border border-slate-100">
                             <span class="text-xl font-black">03</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">先租后买 <span class="text-blue-400">· 附带买断选项</span></h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">先租后买 <span class="text-blue-600">· 附带买断选项</span></h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
                             允许您在实际生产环境中无风险评估设备性能。如果您决定购买该设备，前期支付的部分租赁费用可直接抵扣最终购买款项。
                         </p>
                     </div>
@@ -125,10 +120,11 @@
         </div>
     </section>
 
-    <!-- 3. Services Section (服务领域) -->
-    <section id="services" class="py-24 px-4 bg-transparent relative z-10 scroll-mt-16">
+    <!-- 【BLOQUE 3: OSCURO】 Services Section -->
+    <section id="services" class="py-24 px-4 bg-slate-900 border-t border-slate-800 relative z-10 scroll-mt-16">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
+                <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase mb-2 block">APPLICATIONS</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">我们的核心应用领域</h2>
                 <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
                 <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
@@ -138,7 +134,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
-                <div class="bg-slate-900/75 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div class="bg-slate-950 rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400" alt="自动扶梯清洗" class="w-full h-36 object-cover rounded-xl mb-6 border border-slate-800">
                         <h3 class="text-xl font-bold text-white mb-3">自动扶梯与公共设施</h3>
@@ -150,7 +146,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-slate-900/75 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div class="bg-slate-950 rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" alt="金属高精除锈" class="w-full h-36 object-cover rounded-xl mb-6 border border-slate-800">
                         <h3 class="text-xl font-bold text-white mb-3">金属高精除锈</h3>
@@ -162,7 +158,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-slate-900/75 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div class="bg-slate-950 rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?auto=format&fit=crop&q=80&w=400" alt="表面漆层剥离" class="w-full h-36 object-cover rounded-xl mb-6 border border-slate-800">
                         <h3 class="text-xl font-bold text-white mb-3">表面漆层剥离</h3>
@@ -174,7 +170,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-slate-900/75 backdrop-blur-sm rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div class="bg-slate-950 rounded-2xl p-6 shadow-md border border-slate-800 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400" alt="工业模具无损清洗" class="w-full h-36 object-cover rounded-xl mb-6 border border-slate-800">
                         <h3 class="text-xl font-bold text-white mb-3">工业模具无损清洗</h3>
@@ -188,8 +184,8 @@
         </div>
     </section>
 
-    <!-- 4. Real Case Video Showcase -->
-    <section id="comparison" class="py-24 bg-transparent text-white relative z-10 scroll-mt-16">
+    <!-- 【BLOQUE 4: OSCURO ABSOLUTO】 Video Showcase -->
+    <section id="comparison" class="py-24 bg-slate-950 text-white relative z-10 scroll-mt-16">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
                 <span class="text-blue-400 text-xs font-bold tracking-widest uppercase block mb-2">REAL-TIME CASE SHOWCASE</span>
@@ -201,7 +197,7 @@
             </div>
 
             <!-- Real Video Element Integrated -->
-            <div class="relative w-full max-w-lg mx-auto aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-950">
+            <div class="relative w-full max-w-lg mx-auto aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900">
                 <video class="w-full h-full object-cover" controls autoplay loop muted playsinline>
                     <source src="11110.MP4" type="video/mp4">
                     您的浏览器不支持 HTML5 视频。
@@ -214,45 +210,40 @@
         </div>
     </section>
 
-    <!-- 5. Contact & WeChat QR Section -->
-    <section id="contact" class="py-24 px-4 max-w-7xl mx-auto relative z-10 scroll-mt-16">
-        <div class="bg-slate-900/85 backdrop-blur-md rounded-3xl p-8 md:p-16 shadow-xl border border-slate-800 max-w-5xl mx-auto">
+    <!-- 【BLOQUE 5: CLARO】 Contact Section con QR Real -->
+    <section id="contact" class="py-24 px-4 bg-slate-50 text-slate-900 relative z-10 scroll-mt-16">
+        <div class="bg-white rounded-3xl p-8 md:p-16 shadow-xl border border-slate-200 max-w-5xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-7">
-                    <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase mb-2 block">QUICK CONTACT</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">即刻联系，获取定制清洗方案</h2>
-                    <p class="text-slate-300 mb-8 leading-relaxed text-sm md:text-base">
+                    <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2 block">QUICK CONTACT</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">即刻联系，获取定制清洗方案</h2>
+                    <p class="text-slate-500 mb-8 leading-relaxed text-sm md:text-base">
                         无论是现场代工清洗服务、长期战略合作，还是寄样做清洗测试，我们的工程师团队都将在24小时内为您制定专属工艺与报价。
                     </p>
 
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 shrink-0">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.514 2.02a13.442 13.442 0 01-5.184-5.185l2.02-1.514c.362-.272.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path>
                                 </svg>
                             </div>
                             <div>
                                 <p class="text-xs text-slate-400">服务专线 (24小时)</p>
-                                <p class="text-base font-bold text-white">+86 186-0832-5040</p>
+                                <p class="text-base font-bold text-slate-900">+86 186-0832-5040</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right WeChat QR Code -->
-                <div class="lg:col-span-5 flex flex-col items-center justify-center bg-slate-950/60 border border-slate-800 rounded-2xl p-8 text-center shadow-inner">
-                    <div class="bg-slate-900 p-4 rounded-2xl shadow-md border border-slate-800 mb-4 relative group">
-                        <div class="w-48 h-48 md:w-56 md:h-56 flex flex-col items-center justify-center bg-slate-950 text-slate-600 rounded-xl border-2 border-dashed border-slate-800">
-                            <svg class="w-12 h-12 mb-2 text-slate-300 group-hover:text-blue-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8.56 12.82c-.44 0-.8-.36-.8-.8s.36-.8.8-.8.8.36.8.8-.36.8-.8.8zm4.74 0c-.44 0-.8-.36-.8-.8s.36-.8.8-.8.8.36.8.8-.36.8-.8.8zm-2.3 3.65c1.88 0 3.62-.64 4.88-1.72-1.32-.16-2.53-.7-3.48-1.5-.78.36-1.63.57-2.54.57-.48 0-.06-1.4-.16-.6 1.63 1.13 2.8 2.54 2.8zm8.1-5.18c.28-.73.44-1.52.44-2.34C19.54 5.3 15.5 2 10.53 2S1.5 5.3 1.5 8.95c0 2.16 1.08 4.07 2.74 5.4l-.68 2.04 2.37-1.2c.8.22 1.66.35 2.54.35.25 0 .5-.02.74-.04.14.77.47 1.48.96 2.08l-1.4.7 2.76-1.4c.94.27 1.94.42 2.98.42 4.97 0 9-3.3 9-6.95 0-1.4-.6-2.7-1.65-3.73z"/>
-                            </svg>
-                            <span class="text-xs font-medium text-slate-600">微信二维码占位符</span>
-                        </div>
+                <!-- Integración de QRcode.jpg -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center shadow-inner">
+                    <div class="bg-white p-2 rounded-2xl shadow-md border border-slate-200 mb-4 group transition-transform hover:scale-102">
+                        <img src="QRcode.jpg" alt="WeChat QR Code" class="w-48 h-48 md:w-56 md:h-56 object-contain rounded-xl">
                     </div>
-                    <h4 class="text-base font-bold text-white mb-1">扫描微信或添加好友</h4>
-                    <p class="text-xs text-slate-400 px-4">
+                    <h4 class="text-base font-bold text-slate-800 mb-1">扫描微信或添加好友</h4>
+                    <p class="text-xs text-slate-500 px-4">
                         使用微信扫一扫，即刻与资深激光清洗工程师一对一在线沟通，支持视频看样、寄样测试。
                     </p>
                 </div>
@@ -261,11 +252,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Modificado sin registro ICP) -->
     <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-slate-600 text-xs relative">
         <div class="max-w-7xl mx-auto px-4">
             <p class="mb-2">&copy; 2026 chihalo.cn 激光清洗服务. 版权所有.</p>
-            <p>蜀ICP备XXXXXXXX号-1 | 工业级高能清洗解决方案提供商</p>
+            <p>工业级高能清洗解决方案提供商</p>
         </div>
     </footer>
 
